@@ -5,12 +5,11 @@ class Menu:
   filename: str = "inventory.txt"
 
   def askChoice(self) -> int:
-    while True:
-      choice = -1
-      feed = input("Your choice: ").strip()
-      if feed.isdigit():
-        choice = int(feed)
-      return choice
+    choice = -1
+    feed = input("Your choice: ").strip()
+    if feed.isdigit():
+      choice = int(feed)
+    return choice
 
   def addBottle(self) -> None:
     print("Creating soda bottle.")
