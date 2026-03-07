@@ -1,0 +1,4 @@
+.mode csv
+
+.import --skip 1 ./datasets/t1_artist.csv artist
+.import --skip 1 ./datasets/t1_album.csv album
